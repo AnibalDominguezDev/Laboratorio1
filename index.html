@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script src="./chart.js/dist/chart.umd.js"></script>
+    <title>Laboratorio 1</title>
+</head>
+<body>
+    <section>
+        <h1>Laboratorio 1</h1>
+        <h2>Señanles y espectros</h2>
+        <h5>Grupo 9</h5>
+    </section>
+    <main>
+       
+        <section class="parametros">
+                <form id="formulario">
+
+                    <div>
+                        <label for="amplitude">Amplitud:</label>
+                        <input type="number" id="amplitude" name="amplitude" min="0" max="100" step="1" value="1">
+                    </div>
+
+                    <div>
+                        <label for="frequency">Frecuencia:</label>
+                        <input type="number" id="frequency" name="frequency" min="0" max="1000" step="1" value="1">
+                    </div>
+                    <div>
+                        <label for="phase">Fase:</label>
+                        <input type="number" id="phase" name="phase" min="-180" max="180" step="1" value="0">
+                    </div>
+
+                    <div>
+                        <button id="dibujar" type="submit">Graficar</button>
+                    </div>
+                    <hr>
+
+                    <div>
+                        <label for="componentes">Nro de componentes:</label>
+                        <input type="number" id="componente" name="componentes" min="0" max="100" step="1" value="1">
+                    </div>
+                </form>
+        </section>
+
+        <div class="grafica">
+            <canvas id="grafica"></canvas>
+        </div>
+    </main>
+
+
+   
+    <script src="app.js" defer></script>
+
+</body>
+</html>
